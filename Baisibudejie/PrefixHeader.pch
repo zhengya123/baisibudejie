@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  Baisibudejie
+//
+//  Created by dqong on 16/10/8.
+//  Copyright © 2016年 ZY. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/******** 输出日志 ********/
+#ifdef DEBUG
+#define ZYLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZYLog(...)
+#endif
+/******** 日志输出 ********/
+
+/******** 屏幕宽高 ********/
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+/******** 关于颜色的宏********/
+// 带透明度的颜色
+#define CLColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+// 不带透明度的颜色
+#define CLColor(r,g,b) CLColorA(r,g,b,1);
+// 随机颜色
+#define CLRandomColor CLColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+// 灰色
+#define CLCommonColor(v) CLColor(v,v,v)
+
+/******** 关于颜色的宏********/
+
+#import "ZY_button.h"//自定义button
+#import "LoginViewController.h"
+#import "ZYTextField.h"
+#import "ZY_RootTabBarController.h"
+#import "AppDelegate.h"
+#import "HYBNetworking.h"
+#import "ZY_Method.h"
+#import "LoadingViewForOC.h"
+#import "ZY_AlertViews.h"
+#import "ZY_RootHomeViewController.h"
+#import "SVProgressHUD.h"
+#import "UIView+Toast.h"
+#import "UIImage+XHGIF.h"
+#import "UIImageView+XHWebCache.h"
+#import "UIView+Toast.h"
+#endif /* PrefixHeader_pch */
