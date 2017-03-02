@@ -41,6 +41,7 @@
         ZYLog(@"失败 == %@",error);
         ZYLog(@"失败code = %ld",(long)error.code);
         //没网界面显示没网
+        [weakSelf.view bringSubviewToFront:self.NoNetImage];
         weakSelf.NoNetImage.hidden = NO;
     }];
     

@@ -11,6 +11,7 @@
 #import "CoreLocationVC.h"
 #import "ZY_RootNavigationController.h"
 #import "HHPatientDataViewController.h"
+#import "HHjiujiuHomeViewController.h"
 #import "MY_MapVC.h"
 #import "FirstHTMLVC.h"
 #import "TeamSearchVC.h"
@@ -164,17 +165,22 @@
                 break;
                 case 2:
             {
-            
+                HHjiujiuHomeViewController * jiujiuVC = [HHjiujiuHomeViewController new];
+                [self.navigationController pushViewController:jiujiuVC animated:YES];
+                
+            }
+                break;
+                case 3:
+            {
                 TeamSearchVC * vc = [TeamSearchVC new];
-               // [self.navigationController wxs_pushViewController:vc animationType:WXSTransitionAnimationTypeSysCameraIrisHollowOpen];
+                // [self.navigationController wxs_pushViewController:vc animationType:WXSTransitionAnimationTypeSysCameraIrisHollowOpen];
                 [self.navigationController wxs_pushViewController:vc makeTransition:^(WXSTransitionProperty *transition) {
                     transition.animationType = WXSTransitionAnimationTypeSysCameraIrisHollowOpen;
                     transition.animationTime = 2.0;
                 }];
-               // [self.navigationController pushViewController:vc animated:YES];
+                // [self.navigationController pushViewController:vc animated:YES];
+            
             }
-                break;
-                
             default:
                 break;
         }
@@ -317,6 +323,7 @@
                     @{ zytitle:@[
                                @{zytitleName:@"我的HTML"},
                                @{zytitleName:@"泡泡页面"},
+                               @{zytitleName:@"泡泡首页"},
                                @{zytitleName:@"唐永刚界面"},
                                @{zytitleName:@"隐私设置"}
                                ]

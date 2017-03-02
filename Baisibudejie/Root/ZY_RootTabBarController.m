@@ -94,6 +94,7 @@
     self.selectedIndex = toBtnTag;
 }
 
+#pragma mark - 中间按钮点击
 - (void)tabBarClickWriteButton:(MainTabBar *)tabBar{
     OtherViewController *writeVc = [[OtherViewController alloc] init];
     ZY_RootNavigationController *nav = [[ZY_RootNavigationController alloc] initWithRootViewController:writeVc];

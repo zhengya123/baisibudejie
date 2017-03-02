@@ -8,15 +8,34 @@
 
 #import "NewViewController.h"
 
-@interface NewViewController ()
+@interface NewViewController ()<UISearchResultsUpdating>
 
+@property (nonatomic, strong) UISearchController * searchController;
 @end
 
 @implementation NewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = [UIColor blueColor];
-//    self.navigationItem.title = @"最新";
+    self.view.backgroundColor = [UIColor colorWithRed:1.000 green:0.937 blue:0.852 alpha:1.000];
+    self.navigationItem.titleView = self.searchController.searchBar;
+    
+    
+}
+#pragma mark - searchResultUpdating
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+
+
+}
+#pragma mark - searchController
+-(UISearchController *)searchController{
+    if (_searchController == nil) {
+        _searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+        _searchController.searchResultsUpdater = self;
+        _searchController.dimsBackgroundDuringPresentation = false;
+        _searchController.hidesNavigationBarDuringPresentation = NO;
+        _searchController.searchBar.placeholder = @"请输入查询条件";
+    }
+    return _searchController;
 }
 @end

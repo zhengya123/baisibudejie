@@ -141,7 +141,7 @@
     }];
     
     
-    __weak UIViewController *weakFromVC = fromVC;
+    //__weak UIViewController *weakFromVC = fromVC;
     __weak UIViewController *weakToVC = toVC;
     
     self.willEndInteractiveBlock = ^(BOOL sucess) {
@@ -292,7 +292,7 @@
     }];
     
     
-    __weak UIViewController *weakFromVC = fromVC;
+   // __weak UIViewController *weakFromVC = fromVC;
     __weak UIViewController *weakToVC = toVC;
     
     self.willEndInteractiveBlock = ^(BOOL sucess) {

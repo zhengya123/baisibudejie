@@ -10,4 +10,5 @@
 
 @interface HeaderTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIImageView * titleImage;
 @end

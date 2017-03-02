@@ -57,6 +57,9 @@
 		DF5F0E651DE82A0C00BB07C6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF5F0E561DE82A0C00BB07C6 /* IQKeyboardManager.bundle */; };
 		DF665EE51DF646B80016FE4A /* FTPrettyRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */; };
 		DF665EE61DF646B80016FE4A /* FTRulerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */; };
+		DF7233941E67CA9F00DAD930 /* HHjiujiuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233931E67CA9F00DAD930 /* HHjiujiuHomeViewController.m */; };
+		DF7233971E67EFE400DAD930 /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233961E67EFE400DAD930 /* HeaderTableViewCell.m */; };
+		DF72339A1E67F7C100DAD930 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233991E67F7C100DAD930 /* ButtonView.m */; };
 		DF7751481E03837B002D1E75 /* ImageLookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7751471E03837B002D1E75 /* ImageLookVC.m */; };
 		DF82CD541E03BA5B00DBCEE0 /* screenShotone.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF82CD531E03BA5B00DBCEE0 /* screenShotone.gif */; };
 		DF88FAEB1DAB3611000B908A /* NSArray+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = DF88FAE61DAB3611000B908A /* NSArray+UnicodeReadable.m */; };
@@ -255,6 +258,8 @@
 		3B00E93BBD64C4CEBFAAAACD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		801E82507D02A71E1800BCC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F3BA81AF1E74AFBA1ACD8B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DF0F5C9E1E2337D000CA0344 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DF0F5C9F1E2337D000CA0344 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DF13EC191DA8EE7E00B906B3 /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
 		DF236E1E1DC8425100E747DC /* ZY_RootHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_RootHomeViewController.h; sourceTree = "<group>"; };
 		DF236E1F1DC8425100E747DC /* ZY_RootHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_RootHomeViewController.m; sourceTree = "<group>"; };
@@ -351,6 +356,12 @@
 		DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPrettyRulerView.m; sourceTree = "<group>"; };
 		DF665EE31DF646B80016FE4A /* FTRulerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRulerScrollView.h; sourceTree = "<group>"; };
 		DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRulerScrollView.m; sourceTree = "<group>"; };
+		DF7233921E67CA9F00DAD930 /* HHjiujiuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHjiujiuHomeViewController.h; sourceTree = "<group>"; };
+		DF7233931E67CA9F00DAD930 /* HHjiujiuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHjiujiuHomeViewController.m; sourceTree = "<group>"; };
+		DF7233951E67EFE400DAD930 /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
+		DF7233961E67EFE400DAD930 /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
+		DF7233981E67F7C000DAD930 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		DF7233991E67F7C100DAD930 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
 		DF7751461E03837B002D1E75 /* ImageLookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLookVC.h; sourceTree = "<group>"; };
 		DF7751471E03837B002D1E75 /* ImageLookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLookVC.m; sourceTree = "<group>"; };
 		DF82CD531E03BA5B00DBCEE0 /* screenShotone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenShotone.gif; sourceTree = "<group>"; };
@@ -810,6 +821,43 @@
 				DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */,
 			);
 			path = FTPrettyRulerView;
+			sourceTree = "<group>";
+		};
+		DF72338E1E67CA3E00DAD930 /* HanlonglongVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF72338F1E67CA7600DAD930 /* Controller */,
+				DF7233901E67CA7600DAD930 /* Model  */,
+				DF7233911E67CA7600DAD930 /* View */,
+			);
+			path = HanlonglongVC;
+			sourceTree = "<group>";
+		};
+		DF72338F1E67CA7600DAD930 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF7233921E67CA9F00DAD930 /* HHjiujiuHomeViewController.h */,
+				DF7233931E67CA9F00DAD930 /* HHjiujiuHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF7233901E67CA7600DAD930 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		DF7233911E67CA7600DAD930 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF7233951E67EFE400DAD930 /* HeaderTableViewCell.h */,
+				DF7233961E67EFE400DAD930 /* HeaderTableViewCell.m */,
+				DF7233981E67F7C000DAD930 /* ButtonView.h */,
+				DF7233991E67F7C100DAD930 /* ButtonView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DF88FAE41DAB3611000B908A /* UnicodeReadable */ = {
@@ -1360,6 +1408,7 @@
 		DFBF424F1DA88E8400267830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF72338E1E67CA3E00DAD930 /* HanlonglongVC */,
 				DF9AC4EB1E00F92900F3951D /* HTMLVC */,
 				DFCB04DA1DD06C01008FD5B2 /* MY_Map */,
 				DF236E231DC8722600E747DC /* TableHeaderView */,
@@ -2023,6 +2072,7 @@
 				DF409CF11E149C8300B403A4 /* WXSTransitionManager+TypeTool.m in Sources */,
 				DF9AC5271E0133E100F3951D /* CrossVC.m in Sources */,
 				DFD011681DA9DADD00B788E3 /* LoginViewController.m in Sources */,
+				DF7233941E67CA9F00DAD930 /* HHjiujiuHomeViewController.m in Sources */,
 				DF9AC4F71E01140C00F3951D /* UIView+Toast.m in Sources */,
 				DFBE08B31DC71D52005D2963 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				DF409CE81E149C8300B403A4 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
@@ -2044,6 +2094,7 @@
 				DFD011701DA9E71900B788E3 /* ZYTextField.m in Sources */,
 				DFD011761DA9F15A00B788E3 /* ZY_verification_Button.m in Sources */,
 				DFBF425E1DA88EE900267830 /* OtherViewController.m in Sources */,
+				DF7233971E67EFE400DAD930 /* HeaderTableViewCell.m in Sources */,
 				DF5F0E641DE82A0C00BB07C6 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				DFBF42971DA8DA6300267830 /* ADViewController.m in Sources */,
 				DF9AC52D1E0133EA00F3951D /* SeniorityVC.m in Sources */,
@@ -2106,6 +2157,7 @@
 				DF5715111DBEED010032EECC /* CoreLocationVC.m in Sources */,
 				DFBF42701DA8924700267830 /* MainTabBar.m in Sources */,
 				DF57151E1DBF04B40032EECC /* UIView+Extension.m in Sources */,
+				DF72339A1E67F7C100DAD930 /* ButtonView.m in Sources */,
 				DF409CF01E149C8300B403A4 /* WXSTransitionManager+SystermAnimation.m in Sources */,
 				DF5F0E591DE82A0C00BB07C6 /* IQUITextFieldView+Additions.m in Sources */,
 				DF936CAE1E13B0E4008417F3 /* TeamSearchModel.m in Sources */,
@@ -2162,6 +2214,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DFBF42151DA8821200267830 /* Base */,
+				DF0F5C9E1E2337D000CA0344 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -2170,6 +2223,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DFBF421A1DA8821200267830 /* Base */,
+				DF0F5C9F1E2337D000CA0344 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
