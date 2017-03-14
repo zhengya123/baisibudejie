@@ -17,12 +17,12 @@
 #import "PersonalViewController.h"
 #import "MainTabBar.h"
 @interface ZY_RootTabBarController ()<MainTabBarDelegate>
-@property (nonatomic, weak  )  MainTabBar           * mainTabBar;
-@property (nonatomic, strong) OtherViewController   * otherVC;
-@property (nonatomic, strong) EssenceViewController * essenceVC;
-@property (nonatomic, strong) NewViewController     * NewVC;
-@property (nonatomic, strong) FellowViewController  * fellowVC;
-@property (nonatomic, strong) MeViewController      * meVC;
+@property (nonatomic, weak  )  MainTabBar            * mainTabBar;
+@property (nonatomic, strong) OtherViewController    * otherVC;
+@property (nonatomic, strong) EssenceViewController  * essenceVC;
+@property (nonatomic, strong) NewViewController      * NewVC;
+@property (nonatomic, strong) FellowViewController   * fellowVC;
+@property (nonatomic, strong) MeViewController       * meVC;
 @property (nonatomic, strong) PersonalViewController * personalVC;
 @end
 
@@ -33,6 +33,7 @@
     
     [self SetupMainTabBar];
     [self SetupAllControllers];
+   
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

@@ -105,6 +105,7 @@
     
     
     self.treatment.zy_textField.inputView = self.pickView;
+    self.treatment.zy_textField.inputAccessoryView = self.textToolBar;
     self.maindiagnostic.zy_textField.inputView = self.pickView;
     self.diseases.zy_textField.inputView = self.pickView;
     self.prosthesisName.zy_textField.inputView = self.pickView;
@@ -134,26 +135,38 @@
     NSLog(@"点击了随访");
 
 }
--(void)clickssss{
-
-    NSDate *date = self.datePicker.date;
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh-CN"]];
-    self.surgeryDate.zy_textField.text =  [NSString stringWithFormat:@"%@",[formatter  stringFromDate:date]];
-    [self.surgeryDate resignFirstResponder];
-    [self.surgeryDate.zy_textField endEditing:YES];
-
+-(void)clickssss:(UIToolbar *)toobar{
+    if (self.surgeryDate.zy_textField.isFirstResponder) {
+        NSDate *date = self.datePicker.date;
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh-CN"]];
+        self.surgeryDate.zy_textField.text =  [NSString stringWithFormat:@"%@",[formatter  stringFromDate:date]];
+        [self.surgeryDate resignFirstResponder];
+        [self.surgeryDate.zy_textField endEditing:YES];
+    }else{
+        [self.treatment.zy_textField resignFirstResponder];
+        [self.maindiagnostic.zy_textField resignFirstResponder];
+        [self.diseases.zy_textField resignFirstResponder];
+        [self.surgeryDate.zy_textField resignFirstResponder];
+        [self.prosthesisName.zy_textField resignFirstResponder];
+        [self.prosthesisSystem.zy_textField resignFirstResponder];
+        [self.patellaReplace.zy_textField resignFirstResponder];
+    
+    }
+    
+    
+    
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self.treatment resignFirstResponder];
-    [self.maindiagnostic resignFirstResponder];
-    [self.diseases resignFirstResponder];
-    [self.surgeryDate resignFirstResponder];
-    [self.prosthesisName resignFirstResponder];
-    [self.prosthesisSystem resignFirstResponder];
-    [self.patellaReplace resignFirstResponder];
+    [self.treatment.zy_textField resignFirstResponder];
+    [self.maindiagnostic.zy_textField resignFirstResponder];
+    [self.diseases.zy_textField resignFirstResponder];
+    [self.surgeryDate.zy_textField resignFirstResponder];
+    [self.prosthesisName.zy_textField resignFirstResponder];
+    [self.prosthesisSystem.zy_textField resignFirstResponder];
+    [self.patellaReplace.zy_textField resignFirstResponder];
     
 }
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
@@ -177,8 +190,19 @@
         
         indexNum = 6;
     }
-
 }
+//-(void)textFieldDidEndEditing:(UITextField *)textField{
+//    if (textField == self.surgeryDate.zy_textField) {
+//        NSDate *date = self.datePicker.date;
+//        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//        [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"zh-CN"]];
+//        self.surgeryDate.zy_textField.text =  [NSString stringWithFormat:@"%@",[formatter  stringFromDate:date]];
+//        [self.surgeryDate resignFirstResponder];
+//        [self.surgeryDate.zy_textField endEditing:YES];
+//    }
+//
+//}
 #pragma mark - pickView代理方法
 #pragma mark - UIPickViewDelegate
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -380,7 +404,7 @@
         _textToolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 44)];
         _textToolBar.backgroundColor = [UIColor blackColor];
         UIBarButtonItem *item2=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-        UIBarButtonItem *item3=[[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(clickssss)];
+        UIBarButtonItem *item3=[[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(clickssss:)];
         _textToolBar.items = @[item2, item3];
         
     }
