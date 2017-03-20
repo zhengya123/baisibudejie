@@ -30,7 +30,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self IsLogin];
-    //[self createAD];
+    [self createAD];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -73,7 +73,6 @@
             [self IsLogin];
         
         }
-        
         
     }];
 

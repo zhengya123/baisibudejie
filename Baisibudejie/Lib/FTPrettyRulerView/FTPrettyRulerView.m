@@ -95,7 +95,7 @@
     CGFloat offSetX = scrollView.contentOffset.x + self.frame.size.width / 2 - DISTANCELEFTANDRIGHT;
     CGFloat oX = (offSetX / DISTANCEVALUE) * [scrollView.rulerAverage floatValue];
 #ifdef DEBUG
-    NSLog(@"ago*****************ago:oX:%f",oX);
+    ZYLog(@"ago*****************ago:oX:%f",oX);
 #endif
     if ([self valueIsInteger:scrollView.rulerAverage]) {
         oX = [self notRounding:oX afterPoint:0];
@@ -104,7 +104,7 @@
         oX = [self notRounding:oX afterPoint:1];
     }
 #ifdef DEBUG
-    NSLog(@"after*****************after:oX:%.1f",oX);
+    ZYLog(@"after*****************after:oX:%.1f",oX);
 #endif
     CGFloat offX = (oX / ([scrollView.rulerAverage floatValue])) * DISTANCEVALUE + DISTANCELEFTANDRIGHT - self.frame.size.width / 2;
     [UIView animateWithDuration:.2f animations:^{

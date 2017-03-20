@@ -17,6 +17,7 @@
 #import "TeamSearchVC.h"
 #import "UINavigationController+WXSTransition.h"
 #import "TXScrollLabelView.h"
+#import "MyQr_CodeVC.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -185,6 +186,25 @@
                 break;
         }
 
+    }else if (indexPath.section == 1){
+        switch (indexPath.row) {
+            case 0:
+            {
+            
+            }
+                break;
+                case 1:
+            {
+            //我的二维码
+                MyQr_CodeVC * QrVC = [MyQr_CodeVC new];
+                [self.navigationController pushViewController:QrVC animated:YES];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    
     }
     
     

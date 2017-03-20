@@ -44,7 +44,7 @@ static NSString *const kXWMagicMovePropertyInViewKey = @"kXWMagicMovePropertyInV
     NSArray<UIView *> *startViewGroup = objc_getAssociatedObject(realFromVC, flag ? &kXWMagicMoveAnimatorStartViewVCKey : &kXWMagicMoveAnimatorEndViewVCKey);
     NSArray<UIView *> *endViewGroup = objc_getAssociatedObject(realToVC, !flag ? &kXWMagicMoveAnimatorStartViewVCKey : &kXWMagicMoveAnimatorEndViewVCKey);
     if (!startViewGroup.count || !endViewGroup.count || startViewGroup.count != endViewGroup.count) {
-        NSLog(@"神奇移动的视图为空，或者移动前后视图不相等");
+        ZYLog(@"神奇移动的视图为空，或者移动前后视图不相等");
         [transitionContext completeTransition:NO];
         return;
     }

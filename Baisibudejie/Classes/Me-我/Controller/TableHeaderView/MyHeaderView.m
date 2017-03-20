@@ -30,7 +30,7 @@
 }
 
 - (void)imageViewTapAction:(id)sender {
-    NSLog(@"imageView tap");
+    ZYLog(@"imageView tap");
 }
 
 - (instancetype)init {

@@ -82,7 +82,7 @@
 }
 #pragma mark - 搜索按钮点击
 -(void)searchBtnClick:(UIButton *)btn{
-    NSLog(@"搜索框的值 == %@",self.textField.text);
+    ZYLog(@"搜索框的值 == %@",self.textField.text);
 
 }
 #pragma mark - UITableViewDataSource
@@ -408,7 +408,7 @@
         
     }
    // self.arrayData_section = [self sortObjectsAccordingToInitialWith:nameArr];
-    NSLog(@"分好后的数组 == %@",self.arrayData_section);
+    ZYLog(@"分好后的数组 == %@",self.arrayData_section);
     [self.tableView reloadData];
 }
 

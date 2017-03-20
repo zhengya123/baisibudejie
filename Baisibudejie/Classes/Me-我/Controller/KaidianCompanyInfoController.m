@@ -175,7 +175,7 @@
 }
 #pragma mark - 下一步点击事件
 -(void)btnClick:(UIButton *)btn{
-    NSLog(@"点击了按钮");
+    ZYLog(@"点击了按钮");
 
 }
 #pragma mark - lan

@@ -14,6 +14,7 @@
 #import "KaidianCompanyInfoController.h"
 #import "PersonalViewController.h"
 #import "ZY_RootNavigationController.h"
+#import "ZY_BottonView.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -129,19 +130,19 @@ collectionCellDelegate>
     switch (indexpath.row) {
         case 0:
         {
-         NSLog(@"1");
+         ZYLog(@"1");
             KaidianCompanyInfoController * kai = [KaidianCompanyInfoController new];
             [self.navigationController pushViewController:kai animated:YES];
         }
             break;
             case 1:
         {
-            NSLog(@"2");
+            [[ZY_BottonView shareView] show];
         }
             break;
             case 2:
         {
-            NSLog(@"3");
+            ZYLog(@"3");
         }
             break;
             
@@ -165,5 +166,13 @@ collectionCellDelegate>
     return _tableView;
 
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[ZY_BottonView shareView]remove];
 
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[ZY_BottonView shareView] remove];
+
+}
 @end

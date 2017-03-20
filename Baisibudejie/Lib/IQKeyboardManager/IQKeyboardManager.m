@@ -1935,7 +1935,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 {
     if (_enableDebugging)
     {
-        NSLog(@"IQKeyboardManager: %@",logString);
+        ZYLog(@"IQKeyboardManager: %@",logString);
     }
 }
 

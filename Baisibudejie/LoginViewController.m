@@ -112,6 +112,7 @@
 -(void)ForgotPassWordClick:(UIButton *)btn{
 
     ZYLog(@"忘记密码按钮");
+    [[ZY_BottonView shareView] show];
 
 }
 #pragma mark - lan
@@ -183,8 +184,13 @@
     }
     return _forGotPassWordBtn;
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[ZY_BottonView shareView] remove];
+
+}
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    [[ZY_BottonView shareView] remove];
     [time invalidate];
     time = nil;
 

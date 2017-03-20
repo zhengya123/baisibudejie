@@ -30,9 +30,10 @@
 -(void)createUI{
     self.my_webView.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H);
     [self.view addSubview:self.my_webView];
-    NSString * filePath = [[NSBundle mainBundle]pathForResource:@"Untitled-1" ofType:@"html"];
-    NSString * htmlString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    [self.my_webView loadHTMLString:htmlString baseURL:[NSURL URLWithString:filePath]];
+    [self.my_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app.99test.xingyun.net/index.php?r=newmeeting/info&id=1021&is_app=1&225"]]];
+//    NSString * filePath = [[NSBundle mainBundle]pathForResource:@"Untitled-1" ofType:@"html"];
+//    NSString * htmlString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+//    [self.my_webView loadHTMLString:htmlString baseURL:[NSURL URLWithString:filePath]];
 
 }
 #pragma mark - webViewDelegate
@@ -44,12 +45,22 @@
     [SVProgressHUD showErrorWithStatus:@"加载出错"];
 
 }
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+
+   // NSString * requestString = [[request URL] absoluteString];
+    return YES;
+
+}
 #pragma mark - 懒加载
 -(UIWebView *)my_webView{
     if (_my_webView == nil) {
         _my_webView = [UIWebView new];
         _my_webView.backgroundColor = [UIColor whiteColor];
         _my_webView.delegate = self;
+        _my_webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+        _my_webView.scalesPageToFit = YES;
+        _my_webView.multipleTouchEnabled = YES;
+        _my_webView.userInteractionEnabled = YES;
     }
     return _my_webView;
 }

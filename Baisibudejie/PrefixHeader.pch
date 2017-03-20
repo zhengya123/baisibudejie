@@ -13,7 +13,7 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 /******** 输出日志 ********/
 #ifdef DEBUG
-#define ZYLog(...) NSLog(__VA_ARGS__)
+#define ZYLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else
 #define ZYLog(...)
 #endif
@@ -49,4 +49,5 @@
 #import "UIImage+XHGIF.h"
 #import "UIImageView+XHWebCache.h"
 #import "UIView+Toast.h"
+#import "ZY_BottonView.h"
 #endif /* PrefixHeader_pch */

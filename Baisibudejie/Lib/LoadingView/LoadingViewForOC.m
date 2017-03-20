@@ -46,7 +46,7 @@
 //可以手动调用隐藏动画
 - (void)hideLoadingView
 {
-    NSLog(@"停止；了");
+    ZYLog(@"停止；了");
     [_round1.layer removeAllAnimations];
     [_round2.layer removeAllAnimations];
     [_round3.layer removeAllAnimations];

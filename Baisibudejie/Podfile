@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+pod 'AFNetworking'
+pod 'SVProgressHUD'
+pod 'HYBNetworking'
+pod 'MJRefresh'
+pod 'YYKit'
+pod 'SDWebImage'

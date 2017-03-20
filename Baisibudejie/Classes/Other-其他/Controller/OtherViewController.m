@@ -60,7 +60,7 @@
 
 }
 -(void)action:(UIButton*)button{
-    NSLog(@"%ld",button.tag - 100);
+    ZYLog(@"%ld",button.tag - 100);
 }
 /**
  弹出

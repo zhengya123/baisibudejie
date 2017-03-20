@@ -36,6 +36,8 @@
 		DF57151E1DBF04B40032EECC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57151D1DBF04B40032EECC /* UIView+Extension.m */; };
 		DF5715221DBF5AE80032EECC /* KaidianCompanyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5715201DBF5AE80032EECC /* KaidianCompanyInfoController.m */; };
 		DF5715231DBF5AE80032EECC /* KaidianCompanyInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5715211DBF5AE80032EECC /* KaidianCompanyInfoController.xib */; };
+		DF5B99B01E7A812400DD390D /* MyQr_CodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B99AE1E7A812400DD390D /* MyQr_CodeVC.m */; };
+		DF5B99B11E7A812400DD390D /* MyQr_CodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B99AF1E7A812400DD390D /* MyQr_CodeVC.xib */; };
 		DF5F0E281DE80C1C00BB07C6 /* textField_AtViewWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0E271DE80C1C00BB07C6 /* textField_AtViewWithImage.m */; };
 		DF5F0E2B1DE80C7B00BB07C6 /* ZY_TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0E2A1DE80C7B00BB07C6 /* ZY_TextField.m */; };
 		DF5F0E2D1DE8130000BB07C6 /* redImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5F0E2C1DE8130000BB07C6 /* redImage.png */; };
@@ -165,6 +167,8 @@
 		DF9AC52D1E0133EA00F3951D /* SeniorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC52A1E0133EA00F3951D /* SeniorityVC.m */; };
 		DF9AC5301E0135B900F3951D /* ALLEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC52F1E0135B900F3951D /* ALLEssenceModel.m */; };
 		DF9AC5331E013AE600F3951D /* AllEssenceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC5321E013AE600F3951D /* AllEssenceListCell.m */; };
+		DFAD92DE1E7BB10C00AAC6CB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAD92DD1E7BB10C00AAC6CB /* WebKit.framework */; };
+		DFB5B2DC1E7F7CCC00528296 /* ZY_BottonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5B2DB1E7F7CCC00528296 /* ZY_BottonView.m */; };
 		DFBE08601DC6D4A6005D2963 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBE085B1DC6D4A6005D2963 /* cancel.png */; };
 		DFBE08611DC6D4A6005D2963 /* sure.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBE085C1DC6D4A6005D2963 /* sure.png */; };
 		DFBE08621DC6D4A6005D2963 /* tipBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFBE085D1DC6D4A6005D2963 /* tipBg.jpg */; };
@@ -313,6 +317,9 @@
 		DF57151F1DBF5AE80032EECC /* KaidianCompanyInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaidianCompanyInfoController.h; sourceTree = "<group>"; };
 		DF5715201DBF5AE80032EECC /* KaidianCompanyInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaidianCompanyInfoController.m; sourceTree = "<group>"; };
 		DF5715211DBF5AE80032EECC /* KaidianCompanyInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KaidianCompanyInfoController.xib; sourceTree = "<group>"; };
+		DF5B99AD1E7A812400DD390D /* MyQr_CodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQr_CodeVC.h; sourceTree = "<group>"; };
+		DF5B99AE1E7A812400DD390D /* MyQr_CodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQr_CodeVC.m; sourceTree = "<group>"; };
+		DF5B99AF1E7A812400DD390D /* MyQr_CodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyQr_CodeVC.xib; sourceTree = "<group>"; };
 		DF5F0E261DE80C1C00BB07C6 /* textField_AtViewWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textField_AtViewWithImage.h; sourceTree = "<group>"; };
 		DF5F0E271DE80C1C00BB07C6 /* textField_AtViewWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textField_AtViewWithImage.m; sourceTree = "<group>"; };
 		DF5F0E291DE80C7B00BB07C6 /* ZY_TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_TextField.h; sourceTree = "<group>"; };
@@ -489,6 +496,9 @@
 		DF9AC52F1E0135B900F3951D /* ALLEssenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALLEssenceModel.m; sourceTree = "<group>"; };
 		DF9AC5311E013AE600F3951D /* AllEssenceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEssenceListCell.h; sourceTree = "<group>"; };
 		DF9AC5321E013AE600F3951D /* AllEssenceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEssenceListCell.m; sourceTree = "<group>"; };
+		DFAD92DD1E7BB10C00AAC6CB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DFB5B2DA1E7F7CCC00528296 /* ZY_BottonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_BottonView.h; sourceTree = "<group>"; };
+		DFB5B2DB1E7F7CCC00528296 /* ZY_BottonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_BottonView.m; sourceTree = "<group>"; };
 		DFBE085B1DC6D4A6005D2963 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		DFBE085C1DC6D4A6005D2963 /* sure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sure.png; sourceTree = "<group>"; };
 		DFBE085D1DC6D4A6005D2963 /* tipBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tipBg.jpg; sourceTree = "<group>"; };
@@ -628,6 +638,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAD92DE1E7BB10C00AAC6CB /* WebKit.framework in Frameworks */,
 				DF922D831E0BCD5A00C6E24F /* QuartzCore.framework in Frameworks */,
 				DF5715131DBEEE510032EECC /* CoreLocation.framework in Frameworks */,
 				124C5268F3B7B8E18BD6ED7D /* libPods.a in Frameworks */,
@@ -654,6 +665,7 @@
 		40C7937C624B6054C456E884 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFAD92DD1E7BB10C00AAC6CB /* WebKit.framework */,
 				DF922D821E0BCD5A00C6E24F /* QuartzCore.framework */,
 				DF5715121DBEEE510032EECC /* CoreLocation.framework */,
 				801E82507D02A71E1800BCC6 /* libPods.a */,
@@ -731,6 +743,16 @@
 				DF57151D1DBF04B40032EECC /* UIView+Extension.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		DF5B99AC1E7A810300DD390D /* Qr_code */ = {
+			isa = PBXGroup;
+			children = (
+				DF5B99AD1E7A812400DD390D /* MyQr_CodeVC.h */,
+				DF5B99AE1E7A812400DD390D /* MyQr_CodeVC.m */,
+				DF5B99AF1E7A812400DD390D /* MyQr_CodeVC.xib */,
+			);
+			path = Qr_code;
 			sourceTree = "<group>";
 		};
 		DF5F0E311DE82A0B00BB07C6 /* IQKeyboardManager */ = {
@@ -1408,6 +1430,7 @@
 		DFBF424F1DA88E8400267830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF5B99AC1E7A810300DD390D /* Qr_code */,
 				DF72338E1E67CA3E00DAD930 /* HanlonglongVC */,
 				DF9AC4EB1E00F92900F3951D /* HTMLVC */,
 				DFCB04DA1DD06C01008FD5B2 /* MY_Map */,
@@ -1634,6 +1657,8 @@
 				DF5F0E2A1DE80C7B00BB07C6 /* ZY_TextField.m */,
 				DF5F0E261DE80C1C00BB07C6 /* textField_AtViewWithImage.h */,
 				DF5F0E271DE80C1C00BB07C6 /* textField_AtViewWithImage.m */,
+				DFB5B2DA1E7F7CCC00528296 /* ZY_BottonView.h */,
+				DFB5B2DB1E7F7CCC00528296 /* ZY_BottonView.m */,
 			);
 			path = ZY_Method;
 			sourceTree = "<group>";
@@ -1880,6 +1905,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5B99B11E7A812400DD390D /* MyQr_CodeVC.xib in Resources */,
 				DF88FB1F1DAB3CA1000B908A /* mine-setting-iconN.png in Resources */,
 				DF88FB721DAB3DAB000B908A /* login_tecent_icon@3x.png in Resources */,
 				DF88FB0D1DAB3CA1000B908A /* mine-icon-activity.png in Resources */,
@@ -2083,6 +2109,8 @@
 				DFBF42671DA88F2A00267830 /* FellowViewController.m in Sources */,
 				DF88FAEC1DAB3611000B908A /* NSDictionary+UnicodeReadable.m in Sources */,
 				DF922D811E0BCC3F00C6E24F /* CAReplicatorLayerAnimal.m in Sources */,
+				DF5B99B01E7A812400DD390D /* MyQr_CodeVC.m in Sources */,
+				DFB5B2DC1E7F7CCC00528296 /* ZY_BottonView.m in Sources */,
 				DF7751481E03837B002D1E75 /* ImageLookVC.m in Sources */,
 				DFBE08AF1DC71909005D2963 /* PersonalViewController.m in Sources */,
 				DF88FAED1DAB3611000B908A /* NSSet+UnicodeReadable.m in Sources */,
@@ -2322,8 +2350,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Baisibudejie/PrefixHeader.pch";
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.Baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2338,8 +2367,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Baisibudejie/PrefixHeader.pch";
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.Baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";

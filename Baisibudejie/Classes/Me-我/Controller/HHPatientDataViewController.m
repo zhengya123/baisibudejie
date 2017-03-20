@@ -9,6 +9,7 @@
 #import "HHPatientDataViewController.h"
 #import "textField_AtViewWithImage.h"
 #import "FTPrettyRulerView.h"
+#import "PrefixHeader.pch"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface HHPatientDataViewController ()<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource,FTPrettyRulerViewDelegate>
@@ -104,8 +105,8 @@
     self.surgeryDate.zy_textField.inputAccessoryView=self.textToolBar;
     
     
-    self.treatment.zy_textField.inputView = self.pickView;
-    self.treatment.zy_textField.inputAccessoryView = self.textToolBar;
+    //self.treatment.zy_textField.inputView = self.pickView;
+   // self.treatment.zy_textField.inputAccessoryView = self.textToolBar;
     self.maindiagnostic.zy_textField.inputView = self.pickView;
     self.diseases.zy_textField.inputView = self.pickView;
     self.prosthesisName.zy_textField.inputView = self.pickView;
@@ -132,7 +133,7 @@
 }
 #pragma mark - 开始随访按钮
 -(void)beginBtnClick:(UIButton *)btn{
-    NSLog(@"点击了随访");
+    ZYLog(@"点击了随访");
 
 }
 -(void)clickssss:(UIToolbar *)toobar{
@@ -159,6 +160,7 @@
     
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[ZY_BottonView shareView] remove];
     
     [self.treatment.zy_textField resignFirstResponder];
     [self.maindiagnostic.zy_textField resignFirstResponder];
@@ -171,9 +173,11 @@
 }
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     if (textField == self.treatment.zy_textField) {
+        [textField resignFirstResponder];
+        [[ZY_BottonView shareView] show];
+        //indexNum = 1;
+        //[self.pickView selectRow:2 inComponent:0 animated:YES];
         
-        indexNum = 1;
-        [self.pickView selectRow:2 inComponent:0 animated:YES];
     }else if (textField == self.maindiagnostic.zy_textField){
     
         indexNum = 2;
@@ -427,5 +431,10 @@
         _heightRulerView.backgroundColor = [UIColor clearColor];
     }
     return _heightRulerView;
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[ZY_BottonView shareView] remove];
+
 }
 @end
