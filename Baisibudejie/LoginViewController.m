@@ -13,7 +13,6 @@
 @interface LoginViewController ()<UITextFieldDelegate>
 {
     NSTimer * time;
-
 }
 @property (nonatomic, strong) UIImageView * bg_imageView;
 @property (nonatomic, strong) UIButton * backBtn;
@@ -25,7 +24,11 @@
 @end
 
 @implementation LoginViewController
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //self.view.transform = CGAffineTransformMakeRotation(M_PI);
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithWhite:0.353 alpha:0.971];
@@ -106,6 +109,7 @@
 #pragma mark - 注册按钮
 -(void)registClick:(UIButton *)btn{
     ZYLog(@"跳转到注册界面--暂未开发");
+    [[ZY_ErrorView shareError] showWithStr:@"暂未开发" Font:15 Time:1];
 
 }
 #pragma mark - 忘记密码

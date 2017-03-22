@@ -15,6 +15,10 @@
  */
 + (CGFloat)heightWithString:(NSString*)string fontSize:(CGFloat)fontSize width:(CGFloat)width;
 /**
+ * 获取字符串宽度
+ */
++ (CGFloat)stringWithSize:(NSString*)string fontOfSize:(CGFloat)font;
+/**
  *  颜色转图片
  */
 + (UIImage *)imageWithColor:(UIColor *)color;

@@ -155,16 +155,14 @@
         self.textFieldTitleNumber.text = self.arrayThree[row];
     }
     
-    
 }
 #pragma mark - textField代理时间
 - (void)textFieldDidBeginEditing:(UITextField *)textField;{
     
-    
     [self.pickViewCompanyNature reloadAllComponents];
     [self.pickViewCompanyAddress reloadAllComponents];
     [self.pickViewTitleNumber reloadAllComponents];
-    
+   
 }
 #pragma mark - toolBar点击事件
 -(void)clicks{

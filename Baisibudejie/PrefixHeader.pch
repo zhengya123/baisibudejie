@@ -50,4 +50,5 @@
 #import "UIImageView+XHWebCache.h"
 #import "UIView+Toast.h"
 #import "ZY_BottonView.h"
+#import "ZY_ErrorView.h"
 #endif /* PrefixHeader_pch */

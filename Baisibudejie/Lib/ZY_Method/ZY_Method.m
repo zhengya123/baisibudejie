@@ -29,6 +29,13 @@
     return newSize.height;
     
 }
+#pragma mark - 获取字符串宽度
++ (CGFloat)stringWithSize:(NSString*)string fontOfSize:(CGFloat)font
+{
+    CGRect rect =[string boundingRectWithSize:CGSizeMake(1000, 20) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]} context:nil];
+    return rect.size.width;
+}
+
 #pragma mark - 颜色转图片
 + (UIImage *)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);

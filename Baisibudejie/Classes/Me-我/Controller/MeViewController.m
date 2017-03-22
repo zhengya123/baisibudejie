@@ -15,6 +15,7 @@
 #import "PersonalViewController.h"
 #import "ZY_RootNavigationController.h"
 #import "ZY_BottonView.h"
+#import "ZY_ErrorView.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -31,9 +32,14 @@ collectionCellDelegate>
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //ZY_RootNavigationController * nav = [[ZY_RootNavigationController alloc]initWithRootViewController:self];
-    //[UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1.000 green:0.158 blue:0.176 alpha:1.000];
-
+    //self.navigationController.navigationBar.hidden = YES;
+    
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+   // self.navigationController.navigationBar.hidden = NO;
+    [[ZY_BottonView shareView] remove];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -142,10 +148,31 @@ collectionCellDelegate>
             break;
             case 2:
         {
+            [[ZY_ErrorView shareError] showWithStr:@"密码错误,请稍后重试"
+                                              Font:18
+                                              Time:4
+             ];
             ZYLog(@"3");
         }
             break;
-            
+            case 3:
+        {
+        
+            [[ZY_ErrorView shareError] showWithStr:@"这个正常" Font:18 Time:3];
+        }
+            break;
+            case 4:
+        {
+        
+            [[ZY_ErrorView shareError] showWithStr:@"反正这是一个很长的字符串,我想让他换行看看行不行" Font:18 Time:3];
+        }
+            break;
+            case 5:
+        {
+        
+         [[ZY_ErrorView shareError] showWithStr:@"反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行" Font:18 Time:3];
+        }
+            break;
         default:
             break;
     }
@@ -170,9 +197,5 @@ collectionCellDelegate>
     [[ZY_BottonView shareView]remove];
 
 }
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [[ZY_BottonView shareView] remove];
 
-}
 @end

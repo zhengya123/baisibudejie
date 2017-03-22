@@ -59,6 +59,7 @@
 		DF5F0E651DE82A0C00BB07C6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF5F0E561DE82A0C00BB07C6 /* IQKeyboardManager.bundle */; };
 		DF665EE51DF646B80016FE4A /* FTPrettyRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */; };
 		DF665EE61DF646B80016FE4A /* FTRulerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */; };
+		DF6E92CD1E824ECB0057A594 /* ZY_ErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E92CC1E824ECB0057A594 /* ZY_ErrorView.m */; };
 		DF7233941E67CA9F00DAD930 /* HHjiujiuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233931E67CA9F00DAD930 /* HHjiujiuHomeViewController.m */; };
 		DF7233971E67EFE400DAD930 /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233961E67EFE400DAD930 /* HeaderTableViewCell.m */; };
 		DF72339A1E67F7C100DAD930 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7233991E67F7C100DAD930 /* ButtonView.m */; };
@@ -363,6 +364,8 @@
 		DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPrettyRulerView.m; sourceTree = "<group>"; };
 		DF665EE31DF646B80016FE4A /* FTRulerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRulerScrollView.h; sourceTree = "<group>"; };
 		DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRulerScrollView.m; sourceTree = "<group>"; };
+		DF6E92CB1E824ECB0057A594 /* ZY_ErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_ErrorView.h; sourceTree = "<group>"; };
+		DF6E92CC1E824ECB0057A594 /* ZY_ErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_ErrorView.m; sourceTree = "<group>"; };
 		DF7233921E67CA9F00DAD930 /* HHjiujiuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHjiujiuHomeViewController.h; sourceTree = "<group>"; };
 		DF7233931E67CA9F00DAD930 /* HHjiujiuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHjiujiuHomeViewController.m; sourceTree = "<group>"; };
 		DF7233951E67EFE400DAD930 /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
@@ -1659,6 +1662,8 @@
 				DF5F0E271DE80C1C00BB07C6 /* textField_AtViewWithImage.m */,
 				DFB5B2DA1E7F7CCC00528296 /* ZY_BottonView.h */,
 				DFB5B2DB1E7F7CCC00528296 /* ZY_BottonView.m */,
+				DF6E92CB1E824ECB0057A594 /* ZY_ErrorView.h */,
+				DF6E92CC1E824ECB0057A594 /* ZY_ErrorView.m */,
 			);
 			path = ZY_Method;
 			sourceTree = "<group>";
@@ -2161,6 +2166,7 @@
 				DFBF42411DA888F700267830 /* ZY_RootNavigationController.m in Sources */,
 				DF88FB821DAB8141000B908A /* CollectionTableViewCell.m in Sources */,
 				DFD011CE1DAA27C800B788E3 /* XWFilterAnimator+XWMask.m in Sources */,
+				DF6E92CD1E824ECB0057A594 /* ZY_ErrorView.m in Sources */,
 				DFD011D01DAA27C800B788E3 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				DF236E261DC8723B00E747DC /* MyHeaderView.m in Sources */,
 				DF409CE51E149C8300B403A4 /* UINavigationController+WXSTransition.m in Sources */,
