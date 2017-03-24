@@ -53,19 +53,7 @@
     [self.view addSubview:self.startBtn];
     //开启测心率方法
     [HeartBeat shareManager].delegate = self;
-    /*
-     [[HeartBeat shareManager] startHeartRatePoint:^(NSDictionary *point) {
-     
-     } Frequency:^(NSInteger fre) {
-     dispatch_async(dispatch_get_main_queue(), ^{
-     self.label.text = [NSString stringWithFormat:@"%ld次/分",(long)fre];
-     });
-     
-     } Error:^(NSError *error) {
-     
-     }];
-     */
-    /*
+        /*
      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
      [[HeartBeat shareManager]stop];
      });
@@ -81,31 +69,68 @@
         [self.startBtn setBackgroundImage:[UIImage sd_animatedGIFNamed:@"screenShotTwo"] forState:UIControlStateNormal];
         [self.startBtn setTitle:@"结束" forState:UIControlStateNormal];
          [[HeartBeat shareManager] start];
+       
+//         [[HeartBeat shareManager] startHeartRatePoint:^(NSDictionary *point) {
+//         
+//         } Frequency:^(NSInteger fre) {
+//         dispatch_async(dispatch_get_main_queue(), ^{
+//             if (fre <= 0) {
+//                 
+//                 self.label.text = [NSString stringWithFormat:@"%ld次/分，心率小于0，别测了，你已经死了",(long)fre];
+//             }else if (fre >= 300){
+//                 self.label.text = [NSString stringWithFormat:@"%ld次/分，那么快",(long)fre];
+//             }else{
+//             
+//                 self.label.text = [NSString stringWithFormat:@"%ld次/分",(long)fre];
+//             }
+//         self.errorLabel.text = @"正在安静的测,深呼吸";
+//         });
+//         
+//         } Error:^(NSError *error) {
+//         self.errorLabel.text = @"不要移动手指\n 请将手指覆盖住后置摄像头和闪光灯";
+//         }];
+        
+
     }else{
         [self.startBtn setBackgroundImage:[ZY_Method imageWithColor:[UIColor blueColor]] forState:UIControlStateNormal];
          [self.startBtn setTitle:@"开始" forState:UIControlStateNormal];
         [[HeartBeat shareManager] stop];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [[HeartBeat shareManager]stop];
+//        });
+
     }
 
 }
 #pragma mark - 测心率回调
 - (void)startHeartDelegateRatePoint:(NSDictionary *)point {
+    
+    self.errorLabel.text = @"正在安静的测,深呼吸";
     NSNumber *n = [[point allValues] firstObject];
     //拿到的数据传给心电图View
     [self.live drawRateWithPoint:n];
-    //NSLog(@"%@",point);
-}
-
-- (void)startHeartDelegateRateError:(NSError *)error {
-    NSLog(@"error == %@",error);
-    self.errorLabel.text = @"不要移动手指\n 请将手指覆盖住后置摄像头和闪光灯";
+    NSLog(@" == %@",point);
     
 }
 
+- (void)startHeartDelegateRateError:(NSError *)error {
+    
+    self.errorLabel.text = @"不要移动手指\n 请将手指覆盖住后置摄像头和闪光灯";
+    NSLog(@"error == %@",error);
+}
+
 - (void)startHeartDelegateRateFrequency:(NSInteger)frequency {
-    NSLog(@"\n瞬时心率：%ld",frequency);
+   // NSLog(@"\n瞬时心率：%ld",frequency);
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.label.text = [NSString stringWithFormat:@"%ld次/分",(long)frequency];
+        if (frequency <= 0) {
+            self.label.text = [NSString stringWithFormat:@"%ld次/分，心率小于0，别测了，你已经死了",(long)frequency];
+        }else if (frequency >= 300){
+            self.label.text = [NSString stringWithFormat:@"%ld次/分，那么快",(long)frequency];
+        }else{
+            
+            self.label.text = [NSString stringWithFormat:@"%ld次/分",(long)frequency];
+        }
+       
     });
 
 }
