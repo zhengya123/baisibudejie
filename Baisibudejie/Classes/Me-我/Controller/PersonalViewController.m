@@ -18,6 +18,7 @@
 #import "UINavigationController+WXSTransition.h"
 #import "TXScrollLabelView.h"
 #import "MyQr_CodeVC.h"
+#import "MY_HeartNumVCViewController.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -42,13 +43,18 @@
 @implementation PersonalViewController
 
 -(void)viewWillAppear:(BOOL)animated{
-   // [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewWillAppear:animated];
+    //self.navigationController.navigationBarHidden = YES;
 
 }
 -(void)viewWillDisappear:(BOOL)animated{
    // [self.navigationController setNavigationBarHidden:NO animated:YES];
     [super viewWillDisappear:animated];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    //self.navigationController.navigationBarHidden = NO;
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -103,10 +109,15 @@
     
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+
+
+}
 #pragma mark - 我的地图按钮点击方法
 -(void)outPatientTime_buttonClick:(UIButton *)sender{
-    ZYLog(@"进入了我的地图");
-    MY_MapVC * my_map = [MY_MapVC new];
+    ZYLog(@"进入了我的心率");
+    MY_HeartNumVCViewController * my_map = [MY_HeartNumVCViewController new];
     [self.navigationController pushViewController:my_map animated:YES];
    
 }
@@ -212,7 +223,7 @@
 #pragma mark - lan
 -(UITableView *)tableView{
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -64, SCREEN_W, SCREEN_H + 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -20, SCREEN_W, SCREEN_H + 20) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellID"];
@@ -238,7 +249,7 @@
 -(UIButton *)outPatientTime_button{
     if (_outPatientTime_button == nil) {
         _outPatientTime_button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_outPatientTime_button setTitle:@"我的地图" forState:UIControlStateNormal];
+        [_outPatientTime_button setTitle:@"我的心率" forState:UIControlStateNormal];
         [_outPatientTime_button setTitleColor:[UIColor colorWithRed:139/255.0 green:139/255.0 blue:139/255.0 alpha:1.0] forState:UIControlStateNormal];
         _outPatientTime_button.titleLabel.font = [UIFont systemFontOfSize:15];
         [_outPatientTime_button addTarget:self action:@selector(outPatientTime_buttonClick:) forControlEvents:UIControlEventTouchUpInside];

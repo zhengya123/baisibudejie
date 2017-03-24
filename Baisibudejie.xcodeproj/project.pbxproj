@@ -201,6 +201,10 @@
 		DFBF42901DA8D5FB00267830 /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBF42891DA8D5FB00267830 /* XHLaunchAd.m */; };
 		DFBF42911DA8D5FB00267830 /* XHWebImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBF428B1DA8D5FB00267830 /* XHWebImageDownload.m */; };
 		DFBF42971DA8DA6300267830 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBF42961DA8DA6300267830 /* ADViewController.m */; };
+		DFC220801E84EBF300C71593 /* MY_HeartNumVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2207F1E84EBF300C71593 /* MY_HeartNumVCViewController.m */; };
+		DFC220861E84EC5700C71593 /* HeartBeat.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC220831E84EC5700C71593 /* HeartBeat.m */; };
+		DFC220871E84EC5700C71593 /* HeartLive.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC220851E84EC5700C71593 /* HeartLive.m */; };
+		DFC220891E84F97500C71593 /* screenShotTwo.gif in Resources */ = {isa = PBXBuildFile; fileRef = DFC220881E84F97500C71593 /* screenShotTwo.gif */; };
 		DFC266031E1B77D400C281DC /* TXScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC266001E1B77D400C281DC /* TXScrollLabelView.m */; };
 		DFC266041E1B77D400C281DC /* UIView+TXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC266021E1B77D400C281DC /* UIView+TXFrame.m */; };
 		DFCB04DE1DD06C4D008FD5B2 /* MY_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCB04DC1DD06C4D008FD5B2 /* MY_MapVC.m */; };
@@ -561,6 +565,13 @@
 		DFBF428B1DA8D5FB00267830 /* XHWebImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWebImageDownload.m; sourceTree = "<group>"; };
 		DFBF42951DA8DA6300267830 /* ADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
 		DFBF42961DA8DA6300267830 /* ADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
+		DFC2207E1E84EBF300C71593 /* MY_HeartNumVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_HeartNumVCViewController.h; sourceTree = "<group>"; };
+		DFC2207F1E84EBF300C71593 /* MY_HeartNumVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_HeartNumVCViewController.m; sourceTree = "<group>"; };
+		DFC220821E84EC5700C71593 /* HeartBeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartBeat.h; sourceTree = "<group>"; };
+		DFC220831E84EC5700C71593 /* HeartBeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartBeat.m; sourceTree = "<group>"; };
+		DFC220841E84EC5700C71593 /* HeartLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartLive.h; sourceTree = "<group>"; };
+		DFC220851E84EC5700C71593 /* HeartLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartLive.m; sourceTree = "<group>"; };
+		DFC220881E84F97500C71593 /* screenShotTwo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenShotTwo.gif; sourceTree = "<group>"; };
 		DFC265FF1E1B77D400C281DC /* TXScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXScrollLabelView.h; sourceTree = "<group>"; };
 		DFC266001E1B77D400C281DC /* TXScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXScrollLabelView.m; sourceTree = "<group>"; };
 		DFC266011E1B77D400C281DC /* UIView+TXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXFrame.h"; sourceTree = "<group>"; };
@@ -1433,6 +1444,7 @@
 		DFBF424F1DA88E8400267830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFC2207D1E84EBD300C71593 /* MY_HeartNum */,
 				DF5B99AC1E7A810300DD390D /* Qr_code */,
 				DF72338E1E67CA3E00DAD930 /* HanlonglongVC */,
 				DF9AC4EB1E00F92900F3951D /* HTMLVC */,
@@ -1575,6 +1587,7 @@
 			children = (
 				DF936C921E13A170008417F3 /* Running_Loading */,
 				DF82CD531E03BA5B00DBCEE0 /* screenShotone.gif */,
+				DFC220881E84F97500C71593 /* screenShotTwo.gif */,
 				DF236E211DC842E600E747DC /* yxs_playBack_nomessage.png */,
 				DFBF427C1DA8D16000267830 /* LaunchImage-1.png */,
 				DF13EC191DA8EE7E00B906B3 /* backImage.png */,
@@ -1587,6 +1600,8 @@
 		DFBF427E1DA8D5F100267830 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DFC220811E84EC5700C71593 /* HeartBeat */,
+				DFC220791E84B2F800C71593 /* Category */,
 				DFC265FE1E1B77D400C281DC /* TXScrollLabelView */,
 				DF409CC31E149C8300B403A4 /* WXSTransition */,
 				DF665EE01DF646B80016FE4A /* FTPrettyRulerView */,
@@ -1619,6 +1634,33 @@
 				DFBF428B1DA8D5FB00267830 /* XHWebImageDownload.m */,
 			);
 			path = "ZY_AD(广告)";
+			sourceTree = "<group>";
+		};
+		DFC220791E84B2F800C71593 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DFC2207D1E84EBD300C71593 /* MY_HeartNum */ = {
+			isa = PBXGroup;
+			children = (
+				DFC2207E1E84EBF300C71593 /* MY_HeartNumVCViewController.h */,
+				DFC2207F1E84EBF300C71593 /* MY_HeartNumVCViewController.m */,
+			);
+			path = MY_HeartNum;
+			sourceTree = "<group>";
+		};
+		DFC220811E84EC5700C71593 /* HeartBeat */ = {
+			isa = PBXGroup;
+			children = (
+				DFC220821E84EC5700C71593 /* HeartBeat.h */,
+				DFC220831E84EC5700C71593 /* HeartBeat.m */,
+				DFC220841E84EC5700C71593 /* HeartLive.h */,
+				DFC220851E84EC5700C71593 /* HeartLive.m */,
+			);
+			path = HeartBeat;
 			sourceTree = "<group>";
 		};
 		DFC265FE1E1B77D400C281DC /* TXScrollLabelView */ = {
@@ -1986,6 +2028,7 @@
 				DF88FB671DAB3DAB000B908A /* login_rgister_textfield_bg.png in Resources */,
 				DF88FB6E1DAB3DAB000B908A /* login_sina_icon_click@2x.png in Resources */,
 				DF936C9E1E13A170008417F3 /* Running_Loading_4.png in Resources */,
+				DFC220891E84F97500C71593 /* screenShotTwo.gif in Resources */,
 				DF88FB241DAB3CA1000B908A /* mine_icon_random.png in Resources */,
 				DF88FB151DAB3CA1000B908A /* mine-icon-nearby.png in Resources */,
 				DF88FB291DAB3CA1000B908A /* setup-head-default.png in Resources */,
@@ -2139,6 +2182,7 @@
 				DFD011731DA9F15200B788E3 /* ZY_textField_View.m in Sources */,
 				DFBF428E1DA8D5FB00267830 /* UIImageView+XHWebCache.m in Sources */,
 				DFC266031E1B77D400C281DC /* TXScrollLabelView.m in Sources */,
+				DFC220801E84EBF300C71593 /* MY_HeartNumVCViewController.m in Sources */,
 				DF665EE51DF646B80016FE4A /* FTPrettyRulerView.m in Sources */,
 				DF5715221DBF5AE80032EECC /* KaidianCompanyInfoController.m in Sources */,
 				DF409CE61E149C8300B403A4 /* UIViewController+WXSTransition.m in Sources */,
@@ -2151,6 +2195,7 @@
 				DF57151A1DBF03F30032EECC /* LoadingViewForOC.m in Sources */,
 				DFD011C91DAA27C800B788E3 /* XWDrawerAnimator.m in Sources */,
 				DF936C841E137284008417F3 /* TeamSearchVC.m in Sources */,
+				DFC220871E84EC5700C71593 /* HeartLive.m in Sources */,
 				DF5F0E621DE82A0C00BB07C6 /* IQTitleBarButtonItem.m in Sources */,
 				DFD011BB1DAA27C800B788E3 /* XWInteractiveTransition.m in Sources */,
 				DF88FB7D1DAB466C000B908A /* Me_tableFootViewCollectionViewCell.m in Sources */,
@@ -2189,6 +2234,7 @@
 				DF9AC5211E0133D800F3951D /* picTureVC.m in Sources */,
 				DF409CF41E149C8300B403A4 /* WXSTransitionProperty.m in Sources */,
 				DF5715111DBEED010032EECC /* CoreLocationVC.m in Sources */,
+				DFC220861E84EC5700C71593 /* HeartBeat.m in Sources */,
 				DFBF42701DA8924700267830 /* MainTabBar.m in Sources */,
 				DF57151E1DBF04B40032EECC /* UIView+Extension.m in Sources */,
 				DF72339A1E67F7C100DAD930 /* ButtonView.m in Sources */,

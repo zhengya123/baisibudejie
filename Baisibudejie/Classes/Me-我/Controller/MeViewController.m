@@ -21,7 +21,7 @@
 @interface MeViewController ()<
      UITableViewDelegate,
      UITableViewDataSource,
-collectionCellDelegate>
+     collectionCellDelegate>
 
 @property (nonatomic, strong) UITableView * tableView;
 
@@ -98,14 +98,11 @@ collectionCellDelegate>
                 cell.textLabel.text = @"个人信息";
             }
                 break;
-                
             default:
                 break;
         }
         return cell;
     }
-    
-
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 

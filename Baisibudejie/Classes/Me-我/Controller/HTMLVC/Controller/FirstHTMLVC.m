@@ -15,6 +15,11 @@
 
 @implementation FirstHTMLVC
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"My First HTML";

@@ -15,10 +15,11 @@
 
 +(ZY_ErrorView *)shareError;
 /**
+ * 支持字体长度自适应，可换行
  * string 错误信息
  * font   字体大小
  * time   持续时间
- */
+ **/
 -(void)showWithStr:(NSString *)string
                Font:(CGFloat)font
                Time:(NSTimeInterval)time;

@@ -37,6 +37,11 @@
 
 @implementation CoreLocationVC
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self.locMgr stopUpdatingLocation];
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
