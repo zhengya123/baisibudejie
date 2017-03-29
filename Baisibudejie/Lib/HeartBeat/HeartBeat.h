@@ -75,7 +75,7 @@
 + (instancetype)shareManager;
 
 
-
+-(void)chageLightLevel:(float)torchlevel;
 - (void)start;
 
 /**

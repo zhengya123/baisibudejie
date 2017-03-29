@@ -9,6 +9,7 @@
 
 #import "HeartBeat.h"
 #import <AVFoundation/AVFoundation.h>
+#import <objc/message.h>
 @interface HeartBeat ()<AVCaptureVideoDataOutputSampleBufferDelegate>
 
 // 设备
@@ -66,6 +67,11 @@ static float T = 10;
     [self.points removeAllObjects];
     [self.session stopRunning];
 }
+-(void)chageLightLevel:(float)torchlevel{
+   
+    //[self.device setValue:[NSString stringWithFormat:@"%f",0.5] forKey:NSStringFromSelector(@selector(torchLevel))];
+    objc_msgSend();
+}
 #pragma mark - 设置摄像头
 
 - (void)setupCapture {
@@ -89,7 +95,7 @@ static float T = 10;
         // 开启闪光灯
         self.device.torchMode=AVCaptureTorchModeOn;
         // 调低闪光灯亮度
-        [self.device setTorchModeOnWithLevel:0.5 error:nil];
+        [self.device setTorchModeOnWithLevel:0.7 error:nil];
         [self.device unlockForConfiguration];
     }
     

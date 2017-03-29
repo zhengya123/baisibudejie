@@ -57,6 +57,11 @@
 		DF5F0E631DE82A0C00BB07C6 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0E511DE82A0C00BB07C6 /* IQToolbar.m */; };
 		DF5F0E641DE82A0C00BB07C6 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5F0E531DE82A0C00BB07C6 /* IQUIView+IQKeyboardToolbar.m */; };
 		DF5F0E651DE82A0C00BB07C6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF5F0E561DE82A0C00BB07C6 /* IQKeyboardManager.bundle */; };
+		DF5FFEA61E8B8B3D0075F415 /* ZPDFReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5FFEA51E8B8B3D0075F415 /* ZPDFReaderController.m */; };
+		DF5FFEA91E8B8B490075F415 /* ZPDFPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5FFEA81E8B8B490075F415 /* ZPDFPageController.m */; };
+		DF5FFEAC1E8B8B660075F415 /* ZPDFPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5FFEAB1E8B8B660075F415 /* ZPDFPageModel.m */; };
+		DF5FFEAF1E8B8B7D0075F415 /* ZPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5FFEAE1E8B8B7D0075F415 /* ZPDFView.m */; };
+		DF5FFEB31E8B92920075F415 /* 003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF5FFEB21E8B92920075F415 /* 003.pdf */; };
 		DF665EE51DF646B80016FE4A /* FTPrettyRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */; };
 		DF665EE61DF646B80016FE4A /* FTRulerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF665EE41DF646B80016FE4A /* FTRulerScrollView.m */; };
 		DF6E92CD1E824ECB0057A594 /* ZY_ErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6E92CC1E824ECB0057A594 /* ZY_ErrorView.m */; };
@@ -364,6 +369,15 @@
 		DF5F0E531DE82A0C00BB07C6 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		DF5F0E541DE82A0C00BB07C6 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		DF5F0E561DE82A0C00BB07C6 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		DF5FFEA41E8B8B3D0075F415 /* ZPDFReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFReaderController.h; sourceTree = "<group>"; };
+		DF5FFEA51E8B8B3D0075F415 /* ZPDFReaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFReaderController.m; sourceTree = "<group>"; };
+		DF5FFEA71E8B8B490075F415 /* ZPDFPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFPageController.h; sourceTree = "<group>"; };
+		DF5FFEA81E8B8B490075F415 /* ZPDFPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFPageController.m; sourceTree = "<group>"; };
+		DF5FFEAA1E8B8B660075F415 /* ZPDFPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFPageModel.h; sourceTree = "<group>"; };
+		DF5FFEAB1E8B8B660075F415 /* ZPDFPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFPageModel.m; sourceTree = "<group>"; };
+		DF5FFEAD1E8B8B7D0075F415 /* ZPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFView.h; sourceTree = "<group>"; };
+		DF5FFEAE1E8B8B7D0075F415 /* ZPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFView.m; sourceTree = "<group>"; };
+		DF5FFEB21E8B92920075F415 /* 003.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 003.pdf; sourceTree = "<group>"; };
 		DF665EE11DF646B80016FE4A /* FTPrettyRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPrettyRulerView.h; sourceTree = "<group>"; };
 		DF665EE21DF646B80016FE4A /* FTPrettyRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPrettyRulerView.m; sourceTree = "<group>"; };
 		DF665EE31DF646B80016FE4A /* FTRulerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRulerScrollView.h; sourceTree = "<group>"; };
@@ -846,6 +860,46 @@
 				DF5F0E561DE82A0C00BB07C6 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF5FFE9B1E8B896A0075F415 /* PDF_files */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FFE9E1E8B89940075F415 /* Controller */,
+				DF5FFE9F1E8B89940075F415 /* Model */,
+				DF5FFEA01E8B89940075F415 /* View */,
+				DF5FFEB21E8B92920075F415 /* 003.pdf */,
+			);
+			path = PDF_files;
+			sourceTree = "<group>";
+		};
+		DF5FFE9E1E8B89940075F415 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FFEA41E8B8B3D0075F415 /* ZPDFReaderController.h */,
+				DF5FFEA51E8B8B3D0075F415 /* ZPDFReaderController.m */,
+				DF5FFEA71E8B8B490075F415 /* ZPDFPageController.h */,
+				DF5FFEA81E8B8B490075F415 /* ZPDFPageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF5FFE9F1E8B89940075F415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FFEAA1E8B8B660075F415 /* ZPDFPageModel.h */,
+				DF5FFEAB1E8B8B660075F415 /* ZPDFPageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF5FFEA01E8B89940075F415 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FFEAD1E8B8B7D0075F415 /* ZPDFView.h */,
+				DF5FFEAE1E8B8B7D0075F415 /* ZPDFView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DF665EE01DF646B80016FE4A /* FTPrettyRulerView */ = {
@@ -1444,6 +1498,7 @@
 		DFBF424F1DA88E8400267830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF5FFE9B1E8B896A0075F415 /* PDF_files */,
 				DFC2207D1E84EBD300C71593 /* MY_HeartNum */,
 				DF5B99AC1E7A810300DD390D /* Qr_code */,
 				DF72338E1E67CA3E00DAD930 /* HanlonglongVC */,
@@ -1961,6 +2016,7 @@
 				DF88FB591DAB3DAB000B908A /* login_QQ_icon_click.png in Resources */,
 				DF88FB161DAB3CA1000B908A /* mine-icon-nearby@2x.png in Resources */,
 				DF88FB581DAB3DAB000B908A /* login_QQ_icon@3x.png in Resources */,
+				DF5FFEB31E8B92920075F415 /* 003.pdf in Resources */,
 				DF88FB131DAB3CA1000B908A /* mine-icon-more.png in Resources */,
 				DF88FB281DAB3CA1000B908A /* mine_msg_icon@3x.png in Resources */,
 				DF88FB101DAB3CA1000B908A /* mine-icon-feedback@2x.png in Resources */,
@@ -2133,13 +2189,16 @@
 				DFBF42911DA8D5FB00267830 /* XHWebImageDownload.m in Sources */,
 				DFD011BC1DAA27C800B788E3 /* XWTransitionAnimator.m in Sources */,
 				DF409CF31E149C8300B403A4 /* WXSTransitionManager.m in Sources */,
+				DF5FFEAC1E8B8B660075F415 /* ZPDFPageModel.m in Sources */,
 				DF936C8E1E13844D008417F3 /* Utils.m in Sources */,
 				DFD011BA1DAA27C800B788E3 /* UIViewController+XWTransition.m in Sources */,
 				DF5F0E601DE82A0C00BB07C6 /* IQBarButtonItem.m in Sources */,
 				DFD011C01DAA27C800B788E3 /* XWCircleSpreadAnimator.m in Sources */,
+				DF5FFEA91E8B8B490075F415 /* ZPDFPageController.m in Sources */,
 				DF5F0E5E1DE82A0C00BB07C6 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DFBF42901DA8D5FB00267830 /* XHLaunchAd.m in Sources */,
 				DFD011D51DAA27C800B788E3 /* XWMagicMoveAnimator.m in Sources */,
+				DF5FFEA61E8B8B3D0075F415 /* ZPDFReaderController.m in Sources */,
 				DFBF428F1DA8D5FB00267830 /* XHImageCache.m in Sources */,
 				DF5715161DBEF9CC0032EECC /* ZY_Method.m in Sources */,
 				DFBF426A1DA88F3E00267830 /* MeViewController.m in Sources */,
@@ -2176,6 +2235,7 @@
 				DF9AC52D1E0133EA00F3951D /* SeniorityVC.m in Sources */,
 				DFD011CA1DAA27C800B788E3 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				DFD011C11DAA27C800B788E3 /* XWCoolAnimator+XWExplode.m in Sources */,
+				DF5FFEAF1E8B8B7D0075F415 /* ZPDFView.m in Sources */,
 				DFBF42101DA8821200267830 /* AppDelegate.m in Sources */,
 				DFBE08631DC6D4A6005D2963 /* ZY_AlertViews.m in Sources */,
 				DF236E291DC8758900E747DC /* MyInformationController.m in Sources */,

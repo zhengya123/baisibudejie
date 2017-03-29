@@ -19,6 +19,7 @@
 #import "TXScrollLabelView.h"
 #import "MyQr_CodeVC.h"
 #import "MY_HeartNumVCViewController.h"
+#import "ZPDFReaderController.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -168,21 +169,30 @@
                 
             }
                 break;
-            case 1:
+                case 1:
+            {
+                ZPDFReaderController * readerVC = [[ZPDFReaderController alloc]init];
+                readerVC.titleText = @"H5从入门到跑路";
+                readerVC.fileName = @"003.pdf";
+                [self.navigationController pushViewController:readerVC animated:YES];
+            
+            }
+                break;
+            case 2:
             {
                 HHPatientDataViewController * vc = [HHPatientDataViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
                 
             }
                 break;
-                case 2:
+                case 3:
             {
                 HHjiujiuHomeViewController * jiujiuVC = [HHjiujiuHomeViewController new];
                 [self.navigationController pushViewController:jiujiuVC animated:YES];
                 
             }
                 break;
-                case 3:
+                case 4:
             {
                 TeamSearchVC * vc = [TeamSearchVC new];
                 // [self.navigationController wxs_pushViewController:vc animationType:WXSTransitionAnimationTypeSysCameraIrisHollowOpen];
@@ -353,6 +363,7 @@
         _titles = @[
                     @{ zytitle:@[
                                @{zytitleName:@"我的HTML"},
+                               @{zytitleName:@"我的PDF"},
                                @{zytitleName:@"泡泡页面"},
                                @{zytitleName:@"泡泡首页"},
                                @{zytitleName:@"唐永刚界面"},

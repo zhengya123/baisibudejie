@@ -7,6 +7,7 @@
 //
 
 #import "MY_HeartNumVCViewController.h"
+#import <AVFoundation/AVFoundation.h>
 #import "HeartBeat.h"
 #import "HeartLive.h"
 #import "UIImage+GIF.h"
@@ -16,13 +17,15 @@
 @property (strong, nonatomic) UILabel *label;
 @property (strong, nonatomic) UILabel * errorLabel;
 @property (nonatomic, strong) UIButton * startBtn;
-@property (nonatomic, strong) UIButton * stopBtn;
+@property (nonatomic, strong) UISlider * changeLevelSlide;
+
 @end
 
 @implementation MY_HeartNumVCViewController
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [[HeartBeat shareManager] stop];
+     [UIApplication sharedApplication].idleTimerDisabled = NO;
 
 }
 - (void)viewDidLoad {
@@ -51,6 +54,9 @@
 
     self.startBtn.frame = CGRectMake(SCREEN_W/2 - 70, CGRectGetMaxY(self.errorLabel.frame) + 20, 140, 140);
     [self.view addSubview:self.startBtn];
+    
+//    self.changeLevelSlide.frame = CGRectMake(20, CGRectGetMaxY(self.startBtn.frame) + 20, SCREEN_W - 40, 20);
+//    [self.view addSubview:self.changeLevelSlide];
     //开启测心率方法
     [HeartBeat shareManager].delegate = self;
         /*
@@ -66,6 +72,7 @@
 }
 -(void)startHeat:(BOOL)isstart{
     if (isstart) {
+        [UIApplication sharedApplication].idleTimerDisabled = YES;
         [self.startBtn setBackgroundImage:[UIImage sd_animatedGIFNamed:@"screenShotTwo"] forState:UIControlStateNormal];
         [self.startBtn setTitle:@"结束" forState:UIControlStateNormal];
          [[HeartBeat shareManager] start];
@@ -92,6 +99,7 @@
         
 
     }else{
+         [UIApplication sharedApplication].idleTimerDisabled = NO;
         [self.startBtn setBackgroundImage:[ZY_Method imageWithColor:[UIColor blueColor]] forState:UIControlStateNormal];
          [self.startBtn setTitle:@"开始" forState:UIControlStateNormal];
         [[HeartBeat shareManager] stop];
@@ -134,6 +142,11 @@
     });
 
 }
+-(void)sliderChangeClick:(UISlider *)slider{
+    NSLog(@"%f",slider.value);
+    [[HeartBeat shareManager] chageLightLevel:slider.value];
+
+}
 -(UIButton *)startBtn{
     if (_startBtn == nil) {
         _startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -147,4 +160,19 @@
     }
     return _startBtn;
 }
+-(UISlider *)changeLevelSlide{
+    if (_changeLevelSlide == nil) {
+        _changeLevelSlide = [UISlider new];
+        _changeLevelSlide.minimumTrackTintColor = [UIColor blueColor];
+        _changeLevelSlide.maximumTrackTintColor = [UIColor whiteColor];
+        [_changeLevelSlide setThumbImage:[UIImage imageNamed:@"slider"] forState:UIControlStateNormal];
+        _changeLevelSlide.minimumValue = 0;
+        _changeLevelSlide.maximumValue = 1;
+        [_changeLevelSlide addTarget:self action:@selector(sliderChangeClick:) forControlEvents:UIControlEventValueChanged];
+       // [_changeLevelSlide addTarget:self action:@selector(sliderLoseClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _changeLevelSlide;
+    
+}
+
 @end
